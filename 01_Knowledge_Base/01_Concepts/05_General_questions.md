@@ -1,0 +1,1 @@
+- [ ] czym się różni czas koherencji fotonu od czasu zycia nośnika w stanie wzbudzonym? Które powinno być dlugie i jak to na siebie wpływa? które jest ważniejsze, dlaczego, jaka jest idealna sytuacja

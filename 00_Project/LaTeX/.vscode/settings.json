@@ -1,0 +1,24 @@
+{
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.bibtex-format.tab": "tab",
+  "latex-workshop.linting.enabled": false,
+  "latex-workshop.diagnostics.enabled": false,
+  "latex-workshop.message.log.show": false,
+  "editor.bracketPairColorization": true,
+  "editor.guides.bracketPairs": true,
+  "cSpell.language": "en,pl",
+  "cSpell.words": [
+    "Zmienniczość"
+  ],
+  "[latex]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false
+  },
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.view.pdf.viewer": "external",
+  "latex-workshop.latex.mainFile": "Franciszek_Zabierowski_mgr.tex",
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  
+}

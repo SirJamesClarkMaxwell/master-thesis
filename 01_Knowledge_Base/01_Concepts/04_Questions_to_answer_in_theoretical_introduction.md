@@ -1,0 +1,12 @@
+- [ ] What is a Single Photon Emmiter (SPE), and single photons?
+- [ ] Why SPE are important (quantum technologies)?
+- [ ] What is an Excited/Ground State?
+- [ ] Why SPE are important (chapter I)?
+- [ ] Problems with SPE in solid state physcis?
+- [ ] Huang-Rhys (S), Debay-Waller (DW), Photo-Luminescense spectrum (PL)?
+- [ ] Configuration-Corrdinate Diagram (CCD)?
+- [ ] Phonons 
+- [ ] Phonons-Photon-Electron Interactions
+- [ ] Thermodynamics properties:
+	- [ ] Createion/Transition/Binding energy
+	- [ ] Chemical potentials

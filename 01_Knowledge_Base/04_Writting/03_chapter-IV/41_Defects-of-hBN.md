@@ -1,0 +1,10 @@
+- $V_2$  
+	- struktura elektronowa
+	- wiązania $\pi$  ; $\pi^*$  ; $\sigma$  ;  $\sigma^*$ i jak to się ma do hybrydyzacji $sp^2$ (rysunki !!)
+- Monomery i jego kompleksy
+	- $C_B$  ;  $C_N$ 
+	- $V_2 C_B$ ;  $V_2C_N$ 
+- Dimer $C_BC_N$ 
+	- struktura elektronowa
+	- energia tworzenia
+	- ZPL/PL/S/DW

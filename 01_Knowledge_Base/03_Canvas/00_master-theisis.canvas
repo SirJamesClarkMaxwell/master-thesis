@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"02eb2619981fb397","type":"text","text":"# Master Theisis","x":-340,"y":-800,"width":233,"height":100},
+		{"id":"6c96a4c7a02585e0","x":-660,"y":-540,"width":400,"height":400,"type":"file","file":"03_Canvas/01_Theoretical-Introduction.canvas"}
+	],
+	"edges":[
+		{"id":"e325181a44a2cf1a","fromNode":"02eb2619981fb397","fromSide":"bottom","toNode":"6c96a4c7a02585e0","toSide":"top"}
+	]
+}

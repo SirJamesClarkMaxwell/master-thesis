@@ -1,0 +1,4 @@
+- [ ] [[StrongLightMatter2015liu]] przeczytać w kontekście ekperymentów i tego jak SPE w materiałach 2D rozwiązują problemy tych z QDs
+- [ ] Notatka o  [[SolidstateSinglephotonEmitters2016aharonovich#^zot-6JH5YYN7|problemy SPE i jak materiały 2D]]
+- [ ] Notatka o [[SolidstateSinglephotonEmitters2016aharonovich#^zot-JICYPRYE| bi-exciton and coupled photons]] 
+- [ ] 

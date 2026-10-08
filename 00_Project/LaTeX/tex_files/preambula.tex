@@ -1,0 +1,130 @@
+% !TEX root = ../Franciszek_Zabierowski_mgr.tex
+%autorzy szablonu: Przemysław Michalski, z inspiracji Agaty Dorau, przemyslaw.michalski@pw.edu.pl
+
+\linespread{1.3} %interlinia 1.5
+
+\usepackage[MeX]{polski}
+
+%fonty
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault,scaled=.95]{FiraSans}
+% \usepackage{newtxsf}
+
+%definicje kolorów
+\usepackage[table]{xcolor}
+\definecolor{sliwka}{RGB}{150,95,119} %kolor śliwkowy, zgodny z zaleceniami
+\definecolor{grafit}{RGB}{60,60,60} %kolor grafitowy, zgodny z zaleceniami (przy druku monochromatycznym)
+
+%linki w PDFie - linkowane są przypisy oraz bibliografia
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle = {}, %tytuł dokumentu PDF
+	pdfauthor = {}, %autor PDFa
+	colorlinks,
+	linktoc=page,
+	linkcolor=sliwka,
+	citecolor=sliwka,
+	filecolor=sliwka,
+	urlcolor=sliwka
+}
+
+\usepackage{amsmath,amsfonts,amssymb} %fonty matematyczne
+\usepackage{braket}
+\usepackage{icomma} %brak spacji po przecinku w trybie matematycznym (zwykle przecinek jest traktowany jako rozdział między kolejnymi trzema cyframi)
+\usepackage{textcomp} %the package supports the Text Companion fonts, which provide many text symbols
+\usepackage{gensymb} %stopien Celsjusza (\celcius), stopien (\degree), mikro (\micro), om (\textohm) i promil (\perthousand) w trybie tekstowym
+
+\usepackage{graphicx}
+
+%marginesy
+\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry} 
+
+%nagłówek i stopka
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} %brak linii w nagłówku
+\renewcommand{\footrulewidth}{1.5pt} %linia w stopce
+\renewcommand{\footrule}{{\color{sliwka}%
+	\vskip-\footruleskip\vskip-\footrulewidth
+	\hrule width\headwidth height\footrulewidth\vskip\footruleskip}} %kolor linii w stopce
+
+\fancyhead{} %pusty nagłówek
+\cfoot{} %pusta środkowa część stopki
+\fancyfoot[LE,RO]{\thepage} %numer strony w stopce na parzystej stronie z lewej, na nieparzystej - z prawej
+
+%listy - kształt punktów
+\renewcommand\labelitemi{\color{sliwka}{\tiny$\blacksquare$}} %1. poziom
+\renewcommand\labelitemii{\color{sliwka}{\tiny$\square$}} %2. poziom
+\renewcommand\labelitemiii{\color{sliwka}{\tiny$\bullet$}} %3. poziom
+
+%wcięcia w listach
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1cm, itemindent=0cm}
+
+%stylistyka
+\usepackage{nowidow}
+\widowpenalty=10000 %nie pozostawia wdów na końcu strony
+\clubpenalty=10000 %nie pozostawia sierot
+\brokenpenalty 10000 %nie dzieli stron, gdy przenoszony jest wyraz
+\sloppy % zakaz wydłużania linii poza margines
+\frenchspacing %,,kontynentalne" zwyczaje typograficzne
+
+%odstępy
+\usepackage[skip=4pt,indent=0cm,parfill=0pt]{parskip}
+
+%obrazki/tabele/równania
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
+\renewcommand*{\figurename}{Rys.} 
+\renewcommand*{\tablename}{Tab.}
+\setlength{\arrayrulewidth}{1pt} %grubość linii tabeli
+\arrayrulecolor{sliwka} %kolor linii tabeli
+\renewcommand\thefootnote{\textcolor{sliwka}{\arabic{footnote}}} %kolor numeru przypisu
+\usepackage[font={footnotesize},justification=centerlast]{caption} %czcionka 9 pkt w podpisach tabeli/obrazków
+\numberwithin{equation}{chapter} %numerowanie równań od numeru rozdziału
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\usepackage{subfig}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{lipsum} %generuje tekst
+
+\let\lll=\relax
+
+% ---------- DUŻE SUMY I CAŁKI ----------
+\usepackage{relsize}
+% Użycie: $\bigsum_{n=0}^{\infty}$, $\bigint_0^1 f(x)\,dx$, itp.
+\newcommand{\LargeSum}[1][1.5]{\mathop{\vcenter{\hbox{\scalebox{#1}{$\displaystyle\sum$}}}}\displaylimits}
+\newcommand{\LargeInt}[1][1.25]{\mathop{\vcenter{\hbox{\scalebox{#1}{$\displaystyle\int$}}}}\displaylimits}
+\newcommand{\LargeIInt}[1][1.25]{\mathop{\vcenter{\hbox{\scalebox{#1}{$\displaystyle\iint$}}}}\displaylimits}
+
+\usepackage{comment}
+\usepackage{float}
+\usepackage{verbatim}
+
+
+\captionsetup[sub]{justification=centering,list=yes}
+\newtheorem{theorem}{Twierdzenie}
+
+\usepackage{graphicx} % \scalebox
+
+% Dostosowanie etykiet dla polskiego
+\usepackage{cleveref}
+\crefname{chapter}{rozdział}{rozdziały}
+\crefname{section}{sekcja}{sekcje}
+\crefname{subsection}{podsekcja}{podsekcje}
+\crefname{equation}{równanie}{równania}
+\crefname{figure}{rysunek}{rysunki}
+\crefname{table}{tabela}{tabele}
+
+
+\newcommand{\forceoddpage}{%
+	\clearpage
+	\ifodd\value{page}\else
+		\thispagestyle{empty}\null\newpage
+	\fi
+}
+
+\pagecolor{black}
+\color{white}

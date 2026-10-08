@@ -1,0 +1,3 @@
+- geometry
+- spin (singlet, dublet, tryplet, ....)
+- 

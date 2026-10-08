@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"7df9fc4d5e13cc58","x":-314,"y":-158,"width":400,"height":400,"type":"file","file":"04_Writting/02_chapter-III/30_DFT-methods-in-Solid-State-Physics.md"},
+		{"id":"664e1df55091c739","x":180,"y":-158,"width":400,"height":400,"type":"file","file":"04_Writting/02_chapter-III/31_General-description-of-the-problem.md"},
+		{"id":"52da4118a3770b84","x":-314,"y":360,"width":400,"height":400,"type":"file","file":"04_Writting/02_chapter-III/32_Adiabatic-aproximation-BOA.md"},
+		{"id":"25a4378ae6ee13ae","x":180,"y":360,"width":400,"height":400,"type":"file","file":"04_Writting/02_chapter-III/33_DFT.md"},
+		{"id":"3189916df6091bef","x":-314,"y":880,"width":400,"height":400,"type":"file","file":"04_Writting/02_chapter-III/34_Functionals.md"}
+	],
+	"edges":[]
+}

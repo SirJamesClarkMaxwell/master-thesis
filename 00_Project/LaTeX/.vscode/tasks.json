@@ -1,0 +1,62 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                // "-NoProfile",
+                // "-ExecutionPolicy",
+                // "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\build.ps1"
+            ],
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "light-build",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                // "-NoProfile",
+                // "-ExecutionPolicy",
+                // "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\light-build.ps1"
+            ],
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "clean",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                // "-NoProfile",
+                // "-ExecutionPolicy",
+                // "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\clean.ps1"
+            ],
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "never",
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+    ]
+}

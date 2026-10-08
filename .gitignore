@@ -1,0 +1,42 @@
+# Whitelist: ignore wszystko, potem przepuść tylko tekst/figury pracy.
+# Dane VASP (geometrie/, tmp/, sjcm_mgr/, .venv/) zostają na klasterze.
+/*
+!/.gitignore
+
+# luźne pliki w korzeniu
+!/*.md
+!/*.pdf
+!/*.pptx
+~$*
+
+# notes — vault Obsidian
+!/01_Knowledge_Base/
+/01_Knowledge_Base/.obsidian/plugins/
+/01_Knowledge_Base/.obsidian/workspace.json
+
+# papers -> Zotero na PC (baza + storage), nie git
+
+# LaTeX + Origin + figs
+!/00_Project/
+/00_Project/*
+!/00_Project/LaTeX/
+!/00_Project/Origin/
+!/00_Project/hBN/
+/00_Project/hBN/*
+!/00_Project/hBN/electron_structure/
+/00_Project/hBN/electron_structure/*
+!/00_Project/hBN/electron_structure/figs/
+
+# śmieci LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# puste repa odstawione na bok
+.git.unused-empty-repo/

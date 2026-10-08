@@ -1,0 +1,5 @@
+- full hamiltonian 
+	- for ions and electrons
+	- Interacting hamiltonian (magnetic, electric, phonon, light)
+- 
+- dencity matrix 

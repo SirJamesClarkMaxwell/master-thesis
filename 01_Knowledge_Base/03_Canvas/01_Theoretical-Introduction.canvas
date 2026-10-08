@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"2413ff585a914903","type":"file","file":"04_Writting/02_chapter-III/33_DFT.md","x":1240,"y":-80,"width":620,"height":50},
+		{"id":"4d1d3b4ae0ed9287","type":"file","file":"04_Writting/01_chapter-II/23_Excited-State-and-Optical-properties.md","x":400,"y":100,"width":560,"height":50},
+		{"id":"ca36d7b8a09ae100","type":"file","file":"04_Writting/00_chapter-I/03_What is a Single Photon and Single Photon Emmiter.md","x":-720,"y":-60,"width":720,"height":50},
+		{"id":"035e450788fbba2f","type":"file","file":"04_Writting/00_chapter-I/01_Why_SPE_industry_and_technology.md","x":-720,"y":-220,"width":720,"height":60},
+		{"id":"e74a8a9be029b09b","type":"file","file":"04_Writting/00_chapter-I/02_Physics of application defects in Quantum Technologies.md","x":-720,"y":100,"width":720,"height":50},
+		{"id":"7761470f0248291c","type":"file","file":"04_Writting/01_chapter-II/22_Gods-eye-view-on-defect.md","x":400,"y":-220,"width":421,"height":50},
+		{"id":"c3013d2ec9fdcac9","type":"file","file":"04_Writting/01_chapter-II/21_Defects-definition.md","x":400,"y":-100,"width":421,"height":50},
+		{"id":"8db2a4c53a0fa21b","type":"file","file":"04_Writting/01_chapter-II/24_Thermodynamics properties.md","x":400,"y":0,"width":421,"height":50},
+		{"id":"1614e1e2efd63e2e","type":"file","file":"04_Writting/02_chapter-III/31_General-description-of-the-problem.md","x":1240,"y":-280,"width":620,"height":50},
+		{"id":"1c25a7e11c337982","type":"file","file":"04_Writting/02_chapter-III/32_Adiabatic-aproximation-BOA.md","x":1240,"y":-180,"width":620,"height":50},
+		{"id":"7a73baad705a5fd6","type":"file","file":"04_Writting/02_chapter-III/34_Functionals.md","x":1240,"y":40,"width":620,"height":50},
+		{"id":"7d1d42eb94ab8a98","type":"text","text":"Chapter III   [[02_chapter-III.canvas]]","x":960,"y":-400,"width":280,"height":60,"color":"1"},
+		{"id":"5f2534b94f1642d5","type":"text","text":"Chapter IV  [[03_chapter-IV.canvas]]","x":1900,"y":-400,"width":300,"height":60,"color":"1"},
+		{"id":"d3fe8212b69681d1","type":"file","file":"04_Writting/03_chapter-IV/40_Boron-Nitraide.md","x":2200,"y":-280,"width":340,"height":50},
+		{"id":"a4f5260bd5ba612f","type":"file","file":"04_Writting/03_chapter-IV/41_Defects-of-hBN.md","x":2200,"y":-180,"width":340,"height":50},
+		{"id":"018a1136085e8801","type":"text","text":"Chapter I  [[00_chapter-I.canvas]]","x":-1000,"y":-360,"width":280,"height":60,"color":"1"},
+		{"id":"098f2548c8d5f0f5","type":"text","text":"Chapter II   [[01_chapter-II.canvas]]","x":100,"y":-400,"width":300,"height":60,"color":"1"}
+	],
+	"edges":[
+		{"id":"f657e40a532dd1d6","fromNode":"018a1136085e8801","fromSide":"bottom","toNode":"035e450788fbba2f","toSide":"left"},
+		{"id":"4e3ed5bab78ce852","fromNode":"018a1136085e8801","fromSide":"bottom","toNode":"ca36d7b8a09ae100","toSide":"left"},
+		{"id":"755e1250d91647ae","fromNode":"018a1136085e8801","fromSide":"bottom","toNode":"e74a8a9be029b09b","toSide":"left"},
+		{"id":"54031cbc54715d07","fromNode":"098f2548c8d5f0f5","fromSide":"bottom","toNode":"7761470f0248291c","toSide":"left"},
+		{"id":"314391ce37aa7b8f","fromNode":"098f2548c8d5f0f5","fromSide":"bottom","toNode":"8db2a4c53a0fa21b","toSide":"left"},
+		{"id":"7ee0009c63bf7df4","fromNode":"098f2548c8d5f0f5","fromSide":"bottom","toNode":"c3013d2ec9fdcac9","toSide":"left"},
+		{"id":"c37bb290514a8f7b","fromNode":"098f2548c8d5f0f5","fromSide":"bottom","toNode":"4d1d3b4ae0ed9287","toSide":"left"},
+		{"id":"ecde63ad29ab5d3a","fromNode":"7d1d42eb94ab8a98","fromSide":"bottom","toNode":"1614e1e2efd63e2e","toSide":"left"},
+		{"id":"3edb42856675ec6e","fromNode":"7d1d42eb94ab8a98","fromSide":"bottom","toNode":"1c25a7e11c337982","toSide":"left"},
+		{"id":"544eca5f66517042","fromNode":"7d1d42eb94ab8a98","fromSide":"bottom","toNode":"2413ff585a914903","toSide":"left"},
+		{"id":"b9cdb21cceca9967","fromNode":"7d1d42eb94ab8a98","fromSide":"bottom","toNode":"7a73baad705a5fd6","toSide":"left"},
+		{"id":"67e57ed29b68af9f","fromNode":"5f2534b94f1642d5","fromSide":"bottom","toNode":"d3fe8212b69681d1","toSide":"left"},
+		{"id":"25a218e1d9b7c34d","fromNode":"5f2534b94f1642d5","fromSide":"bottom","toNode":"a4f5260bd5ba612f","toSide":"left"}
+	]
+}
