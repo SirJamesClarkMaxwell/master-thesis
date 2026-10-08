@@ -17,16 +17,11 @@
 
 # papers -> Zotero na PC (baza + storage), nie git
 
-# LaTeX + Origin + figs
+# LaTeX + Origin. Cale 00_Project/hBN (obliczenia + figs) poza repo -> serwer/klaster.
 !/00_Project/
 /00_Project/*
 !/00_Project/LaTeX/
 !/00_Project/Origin/
-!/00_Project/hBN/
-/00_Project/hBN/*
-!/00_Project/hBN/electron_structure/
-/00_Project/hBN/electron_structure/*
-!/00_Project/hBN/electron_structure/figs/
 
 # śmieci Pythona
 __pycache__/
