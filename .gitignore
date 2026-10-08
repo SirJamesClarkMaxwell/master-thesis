@@ -2,6 +2,7 @@
 # Dane VASP (geometrie/, tmp/, sjcm_mgr/, .venv/) zostają na klasterze.
 /*
 !/.gitignore
+!/.gitattributes
 
 # luźne pliki w korzeniu
 !/*.md
@@ -26,6 +27,10 @@
 !/00_Project/hBN/electron_structure/
 /00_Project/hBN/electron_structure/*
 !/00_Project/hBN/electron_structure/figs/
+
+# śmieci Pythona
+__pycache__/
+*.pyc
 
 # śmieci LaTeX
 *.aux
