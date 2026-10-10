@@ -6,7 +6,7 @@ doi: "{{ DOI or doi }}"
 url: "{{ url }}"
 zotero_pdf: "{% if pdfZoteroLink %}{{ pdfZoteroLink }}{% endif %}"
 tags:
-{%- for t in tags %}{%- if "/" in t.tag and not t.tag.startsWith("cleanup/") %}
+{%- for t in tags %}{%- if "/" in t.tag and not t.tag.startsWith("cleanup/") and not t.tag.startsWith("status/") and not t.tag.startsWith("priority/") %}
   - {{ t.tag | replace(r/\s.*$/, "") }}
 {%- endif %}{%- endfor %}
 ---
@@ -46,6 +46,11 @@ tags:
 {%- set grayAnnotations = annotations | filterby("colorCategory", "contains", "Gray") %}
 
 # {{ title | escape }}
+
+## Tematy
+{%- for t in tags %}{%- if "/" in t.tag and not t.tag.startsWith("cleanup/") and not t.tag.startsWith("status/") and not t.tag.startsWith("priority/") %}
+- [[01_Concepts/{{ t.tag | replace(r/\s.*$/, "") | replace(r/^[^\/]*\//, "") }}]]
+{%- endif %}{%- endfor %}
 
 ## Moje przemyślenia i streszczenie
 
