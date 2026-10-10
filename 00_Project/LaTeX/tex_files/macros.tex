@@ -1,0 +1,45 @@
+% !TEX root = ../Franciszek_Zabierowski_mgr.tex
+% Wspolne makra matematyczne (wartosci domyslne = notatki w University-Of-Physics-dev).
+% Czcionka matematyczna zostaje CM (newtxsf w preambule jest zakomentowane).
+
+% ---------- Re / Im: R i I jako \mathbb, "e" i "m" prostym krojem ----------
+\DeclareRobustCommand{\Realis}{\mathop{\mathbb{R}\mathrm{e}}\nolimits}
+\DeclareRobustCommand{\Imaginaris}{\mathop{\mathbb{I}\mathrm{m}}\nolimits}
+
+% ---------- Powiekszone operatory ----------
+% \LargeOp[skala]{operator}   sumy, iloczyny, \bigcup ...: granice nad/pod w trybie display, z boku w tekscie.
+\newcommand{\LargeOp}[2][1.4]{\mathop{\vcenter{\hbox{\scalebox{#1}{$\displaystyle#2$}}}}\displaylimits}
+\newcommand{\LargeSum}[1][1.5]{\LargeOp[#1]{\sum}}
+\newcommand{\LargeProd}[1][1.5]{\LargeOp[#1]{\prod}}
+
+% Calki: w trybie display granice NAD i POD znakiem, przesuniete jak w TeX-owej korekcji kursywy
+% (gorna w prawo, dolna w lewo o polowe \fontcharic znaku), w tekscie zwykle granice z boku.
+% Skladnia jak zawsze: \LargeInt[skala]_{a}^{b} f
+\makeatletter
+\newdimen\LI@dx
+\newcommand{\LI@tilt}{0.25}% przesuniecie granic = \LI@tilt * skala * 1em (gorna w prawo, dolna w lewo o polowe)
+\def\LI@go#1#2{\def\LI@s{#1}\def\LI@op{#2}\def\LI@lo{}\def\LI@hi{}\LI@parse}
+\def\LI@parse{\@ifnextchar_{\LI@sub}{\@ifnextchar^{\LI@sup}{\LI@done}}}
+\def\LI@sub_#1{\def\LI@lo{#1}\LI@parse}
+\def\LI@sup^#1{\def\LI@hi{#1}\LI@parse}
+\def\LI@text{\mathop{\LI@op}\nolimits_{\LI@lo}^{\LI@hi}}
+\def\LI@display{%
+  \LI@dx=\LI@s em \relax
+  \LI@dx=\LI@tilt\LI@dx
+  \mathop{\vcenter{\offinterlineskip\halign{\hfil##\hfil\cr
+    \hbox{\kern\LI@dx$\scriptstyle\LI@hi$}\cr
+    \noalign{\kern1pt}
+    \hbox{\scalebox{\LI@s}{$\displaystyle\LI@op$}}\cr
+    \noalign{\kern1pt}
+    \hbox{\kern-\LI@dx$\scriptstyle\LI@lo$}\cr}}}\nolimits}
+\def\LI@done{\mathchoice{\LI@display}{\LI@text}{\LI@text}{\LI@text}}
+
+% \oiint: amsmath nie ma; dwie calki z kolkiem
+\newcommand{\oiint}{\mathop{\vcenter{\hbox{\ooalign{\hfil$\displaystyle\iint$\hfil\cr\hfil$\displaystyle\bigcirc$\hfil\cr\vphantom{$\displaystyle\iint$}\cr}}}}\nolimits}
+
+\newcommand{\LargeInt}[1][1.25]{\LI@go{#1}{\int}}
+\newcommand{\LargeIInt}[1][1.25]{\LI@go{#1}{\iint}}
+\newcommand{\LargeIIInt}[1][1.25]{\LI@go{#1}{\iiint}}
+\newcommand{\LargeOint}[1][1.25]{\LI@go{#1}{\oint}}
+\newcommand{\LargeOiint}[1][1.25]{\LI@go{#1}{\oiint}}
+\makeatother
