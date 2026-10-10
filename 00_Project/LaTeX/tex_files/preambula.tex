@@ -95,6 +95,12 @@
 % ---------- DUŻE SUMY I CAŁKI ----------
 \usepackage{relsize}
 \input{tex_files/macros}
+% ---------- BIBLIOGRAFIA: ISO 690 numeryczna, numery wg kolejnosci pierwszego cytowania ----------
+% Plik bibliography.bib generuje scripts/bib.ps1 z Zotero (Better BibTeX) - nie edytowac recznie.
+\usepackage[backend=biber,style=iso-numeric,sorting=none,language=polish]{biblatex}
+\DefineBibliographyStrings{polish}{online={online}}
+\addbibresource{bibliography.bib}
+\defbibheading{bibliography}[Bibliografia]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}}
 % Użycie: $\bigsum_{n=0}^{\infty}$, $\bigint_0^1 f(x)\,dx$, itp.
 
 
@@ -127,5 +133,9 @@
 	\fi
 }
 
-\pagecolor{black}
-\color{white}
+% Tlo: domyslnie ciemne (ekran). Wersja do druku/oddania: kompiluj z -Print (scripts/build.ps1 -Print),
+% czyli \def\PRINTVERSION{1} przed \input.
+\ifdefined\PRINTVERSION\else
+	\pagecolor{black}
+	\color{white}
+\fi
