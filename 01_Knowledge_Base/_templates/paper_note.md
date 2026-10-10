@@ -5,7 +5,10 @@ year: "{% if date %}{{ date | format('YYYY') }}{% endif %}"
 doi: "{{ DOI or doi }}"
 url: "{{ url }}"
 zotero_pdf: "{% if pdfZoteroLink %}{{ pdfZoteroLink }}{% endif %}"
-tags: []
+tags:
+{%- for t in tags %}{%- if "/" in t.tag and not t.tag.startsWith("cleanup/") %}
+  - {{ t.tag | replace(r/\s.*$/, "") }}
+{%- endif %}{%- endfor %}
 ---
 
 {% macro renderAnnotations(items, calloutType, icon, heading) %}
