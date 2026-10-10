@@ -40,3 +40,8 @@ __pycache__/
 
 # puste repa odstawione na bok
 .git.unused-empty-repo/
+
+# biber / BBT export pomocnicze
+*.bcf
+*.run.xml
+/00_Project/LaTeX/build/bibliography.raw.bib
