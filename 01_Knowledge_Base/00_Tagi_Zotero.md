@@ -9,10 +9,10 @@ Tagi ustawiam w Zotero (kolorowe mają skrót klawiszowy 1–9, przeciągnięcie
 | 5 | `status/unread 📥` | jeszcze nie ruszone |
 | 4 | `status/reading 📖` | w trakcie czytania |
 | 1 | `status/processed ✅` | przeczytane i opracowane, nic więcej nie trzeba |
-| — | `status/to-note 📝` | przeczytane, ale trzeba przeczytać drugi raz i zrobić notatkę |
+| 6 | `status/to-note 📝` | przeczytane, ale trzeba przeczytać drugi raz i zrobić notatkę |
 | 3 | `status/revisit 🔁` | wrócić do tej pracy później (np. gdy będzie potrzebna do rozdziału) |
 | 2 | `status/core ⭐` | kluczowa praca do tezy, cytować na pewno |
-| 6 | `status/to-check ❓` | niepewne: czy w ogóle jest przydatne / czy dane są wiarygodne |
+| — | `status/to-check ❓` | niepewne: czy w ogóle jest przydatne / czy dane są wiarygodne |
 
 Zwykła droga: `unread` → `reading` → `to-note` → `processed`. `core` dodaję obok, gdy praca jest ważna.
 
@@ -35,6 +35,5 @@ Zwykła droga: `unread` → `reading` → `to-note` → `processed`. `core` doda
 
 ## Inne
 
-- `further-reading` — praca z bibliografii innej pracy, do doczytania.
-- `idea` — pomysł do wykorzystania w tezie.
+- `idea 💡` — pomysł do wykorzystania w tezie.
 - `cleanup/…` — techniczne znaczniki porządkowe (`brak-pdf`, `duplikat`, `smiec`); nie dotyczą treści i nie są kopiowane nigdzie dalej.
