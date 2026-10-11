@@ -6,12 +6,12 @@ Tagi ustawiam w Zotero (kolorowe mają skrót klawiszowy 1–9, przeciągnięcie
 
 | Klawisz | Tag | Znaczenie |
 |---|---|---|
-| 5 | `status/unread 📥` | jeszcze nie ruszone |
-| 4 | `status/reading 📖` | w trakcie czytania |
 | 1 | `status/processed ✅` | przeczytane i opracowane, nic więcej nie trzeba |
-| 6 | `status/to-note 📝` | przeczytane, ale trzeba przeczytać drugi raz i zrobić notatkę |
-| 3 | `status/revisit 🔁` | wrócić do tej pracy później (np. gdy będzie potrzebna do rozdziału) |
 | 2 | `status/core ⭐` | kluczowa praca do tezy, cytować na pewno |
+| 3 | `status/revisit 🔁` | wrócić do tej pracy później (np. gdy będzie potrzebna do rozdziału) |
+| 4 | `status/reading 📖` | w trakcie czytania |
+| 5 | `status/unread 📥` | jeszcze nie ruszone |
+| 6 | `status/to-note 📝` | przeczytane, ale trzeba przeczytać drugi raz i zrobić notatkę |
 | — | `status/to-check ❓` | niepewne: czy w ogóle jest przydatne / czy dane są wiarygodne |
 
 Zwykła droga: `unread` → `reading` → `to-note` → `processed`. `core` dodaję obok, gdy praca jest ważna.
